@@ -1,24 +1,27 @@
-let nowTheme = 0;
-let numOfThemes = 2;
-let themes = [
+let nowTheme = 0
+const numOfThemes = 3
+const themes = [
     ["black", "white"],
-    ["blue", "yellow"]
+    ["blue", "yellow"],
+    ["white", "red"],
 ]
-let theme_names = ["Classic", "Patriot"]
+const theme_names = ["Classic", "Patriot", "POLSKA_STRONG"]
 
-let gameMode = 0;
+const gameHeight = 700, gameWidth = 663
+const downIndent = 10, upIndent = 70
 
-let numOfBonuses, maxBonuses = 10, bonusExistTime = 100;
+let gameMode = 0
 
-let gameHeight = 500;
-let gameWidth = 700;
+const platformHeight = 10, platformWidth = 100
+const platformSpeed = 228
 
-let wallWidth = 10;
+const blockHeight = 10, blockWidth = 30
+const betweenBlocks = 3
+const blocksInRow = 20, numOfRows = 10
+const blockColorBrightness = 500
 
-let boardHeight = 50;
-let boardWidth = 10;
-let circleRadius = 7;
+const ballRadius = 5
+const ballSpeed = 400
 
-let leftScore, rightScore, endGameScore = 5;
-
-let ballRadius = 10;
+//Alterable variables. Must be nullified
+let nowScore = 0
