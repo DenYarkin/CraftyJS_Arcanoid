@@ -12,7 +12,7 @@ const downIndent = 10, upIndent = 70
 
 let gameMode = 0, numModes = 2
 const timerMode = 5
-const modesNames = ["Score", "Mode"]
+const modesNames = ["Score", "Timer"]
 
 const platformHeight = 10, platformWidth = 100
 const platformSpeed = 228

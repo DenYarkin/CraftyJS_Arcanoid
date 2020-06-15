@@ -30,4 +30,11 @@ Crafty.defineScene("Menu", function() {
         })
     settings.newPos(gameWidth / 2 - settings.w / 2, 300)
     settings.addText("Settings")
+
+    let leaderboard = Crafty.e("Button")
+        .bind("Click", function(MouseEvent){
+            Crafty.scene("Leaderboard");
+        })
+    leaderboard.newPos(gameWidth / 2 - leaderboard.w / 2, 400)
+    leaderboard.addText("Leaderboard")
 })
