@@ -5,12 +5,14 @@ const themes = [
     ["blue", "yellow"],
     ["white", "red"],
 ]
-const theme_names = ["Classic", "Patriot", "POLSKA_STRONG"]
+const themesNames = ["Classic", "Patriot", "POLSKA"]
 
 const gameHeight = 700, gameWidth = 663
 const downIndent = 10, upIndent = 70
 
-let gameMode = 0
+let gameMode = 0, numModes = 2
+const timerMode = 5
+const modesNames = ["Score", "Mode"]
 
 const platformHeight = 10, platformWidth = 100
 const platformSpeed = 228
@@ -22,6 +24,7 @@ const blockColorBrightness = 500
 
 const ballRadius = 5
 const ballSpeed = 400
+
 
 //Alterable variables. Must be nullified
 let nowScore = 0

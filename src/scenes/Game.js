@@ -29,6 +29,11 @@ Crafty.defineScene("Game", function() {
         }
     }
     let ball = Crafty.e("Ball")
-    let score = Crafty.e("Score")
+    if (gameMode == 0){
+        let score = Crafty.e("Score")
+    }
+    if (gameMode == 1){
+        let timer = Crafty.e("Timer")
+    }
 
 })

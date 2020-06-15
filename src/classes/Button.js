@@ -2,7 +2,7 @@ Crafty.c("Button", {
     required: "2D, DOM, Text, Mouse",
     init: function() {
         this.h = 62
-        this.w = 350
+        this.w = 600
         let _x = this.x
         let _y = this.y
         this.back = Crafty.e("2D, DOM, Text, Color")
