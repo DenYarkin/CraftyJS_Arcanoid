@@ -19,6 +19,9 @@ Crafty.defineScene("Game", function() {
         b = Math.round(k * b)
         let color = "rgb(" + String(r) + "," + String(g) + "," + String(b) + ")"
         for (let j = 0; j < blocksInRow; j++) {
+            if (levels[nowLevel][i][j] == '0') {
+                continue
+            }
             blocks[i].push(Crafty.e("Block")
                 .attr({
                     x: (j + 1) * betweenBlocks + blockWidth * j,

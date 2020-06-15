@@ -19,6 +19,7 @@ Crafty.defineScene("Menu", function() {
         })
     let start = Crafty.e("Button")
         .bind("Click", function(MouseEvent){
+            nowLevel = 0
             Crafty.scene("Game");
         })
     start.newPos(gameWidth / 2 - start.w / 2, 200)
@@ -37,4 +38,11 @@ Crafty.defineScene("Menu", function() {
         })
     leaderboard.newPos(gameWidth / 2 - leaderboard.w / 2, 400)
     leaderboard.addText("Leaderboard")
+
+    let levelSelect = Crafty.e("Button")
+        .bind("Click", function(MouseEvent){
+            Crafty.scene("LevelSelect");
+        })
+    levelSelect.newPos(gameWidth / 2 - levelSelect.w / 2, 500)
+    levelSelect.addText("Select level")
 })

@@ -9,7 +9,7 @@ Crafty.defineScene("Leaderboard", function() {
             x: 0,
             y: 50
         })
-        .text("Settings")
+        .text("Leaderboard")
         .textFont({
             size: "70px"
         })
