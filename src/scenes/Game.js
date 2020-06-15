@@ -4,6 +4,9 @@ Crafty.defineScene("Game", function() {
 
     nowScore = 0
 
+    if (levels.length < nowLevel + 1) {
+        nowLevel = 0
+    }
     let platform = Crafty.e("Platform")
 
     let blocks = []
